@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1507608158173-1dcec673a2e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff; /* Default text color */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00; /* Bright yellow for links */
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Change to white on hover */
+}
+
+section {
+    padding: 40px;
+    margin: 20px;
+    background: rgba(53, 66, 74, 0.8); /* Darker background for sections */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+section.visible {
+    opacity: 1; /* Fade in */
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    color: #ffcc00; /* Bright yellow for the introduction heading */
+}
+
+.skills-overview {
+    margin-top: 40px;
+}
+
+.skill-box {
+    background: rgba(255, 255, 255, 0.9); /* Light background for skill boxes */
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0  4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta h2 {
+    color: #ffcc00; /* Bright yellow for call-to-action heading */
+}
+
+.cta-button {
+    background: #35424a; /* Dark background for button */
+    color: #ffffff; /* White text for button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #ffcc00; /* Change to bright yellow on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff; /* White for footer text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, ul {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Corrected spacing */
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p, ul {
+        font-size: 0.8em;
+    }
+}
+
+.project {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+.project.visible {
+    opacity: 1; /* Fade in */
+}
